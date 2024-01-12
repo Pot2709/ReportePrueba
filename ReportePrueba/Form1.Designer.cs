@@ -29,8 +29,7 @@
         private void InitializeComponent()
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.RptNNotaCredito1 = new ReportePrueba.Reportes.RptNotaCredito();
-            this.RptFactura1 = new ReportePrueba.Reportes.RptFactura();
+            this.Bol1 = new ReportePrueba.Reportes.Bol();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -41,7 +40,7 @@
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.RptFactura1;
+            this.crystalReportViewer1.ReportSource = this.Bol1;
             this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
             this.crystalReportViewer1.TabIndex = 0;
             // 
@@ -60,7 +59,6 @@
         #endregion
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private Reportes.RptNotaCredito RptNNotaCredito1;
-        private Reportes.RptFactura RptFactura1;
+        private Reportes.Bol Bol1;
     }
 }

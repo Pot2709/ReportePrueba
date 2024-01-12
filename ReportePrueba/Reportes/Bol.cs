@@ -16,14 +16,14 @@ namespace ReportePrueba.Reportes {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class RptBoleta : ReportClass {
+    public class Bol : ReportClass {
         
-        public RptBoleta() {
+        public Bol() {
         }
         
         public override string ResourceName {
             get {
-                return "Rpt.Boleta.rpt";
+                return "Bol.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace ReportePrueba.Reportes {
         
         public override string FullResourceName {
             get {
-                return "ReportePrueba.Reportes.Rpt.Boleta.rpt";
+                return "ReportePrueba.Reportes.Bol.rpt";
             }
             set {
                 // Do nothing
@@ -98,9 +98,9 @@ namespace ReportePrueba.Reportes {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedRptBoleta : Component, ICachedReport {
+    public class CachedBol : Component, ICachedReport {
         
-        public CachedRptBoleta() {
+        public CachedBol() {
         }
         
         [Browsable(false)]
@@ -137,7 +137,7 @@ namespace ReportePrueba.Reportes {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            RptBoleta rpt = new RptBoleta();
+            Bol rpt = new Bol();
             rpt.Site = this.Site;
             return rpt;
         }
